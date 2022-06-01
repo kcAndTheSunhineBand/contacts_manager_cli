@@ -9,7 +9,7 @@ import java.util.List;
 public class Read {
 
     public static void readFileContents() throws IOException {
-        Path filepath = Paths.get("places", "countries.txt");
+        Path filepath = Paths.get("places", "contacts.txt");
         List<String> fileContents = Files.readAllLines(filepath);
         System.out.println(fileContents);
     }

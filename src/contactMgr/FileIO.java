@@ -15,7 +15,7 @@
 //
 ////        create directory & file
 //        String directory = "places";
-//        String filename = "countries.txt";
+//        String filename = "contacts.txt";
 //
 //        Path myDirectory = Paths.get(directory);
 //        Path myFile = Paths.get(directory, filename);
@@ -37,7 +37,7 @@
 //
 //
 //    public static void readFileContents() throws IOException {
-//        Path filepath = Paths.get("places", "countries.txt");
+//        Path filepath = Paths.get("places", "contacts.txt");
 //        List<String> fileContents = Files.readAllLines(filepath);
 //        System.out.println(fileContents);
 //    }
