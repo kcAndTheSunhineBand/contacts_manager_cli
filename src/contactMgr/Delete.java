@@ -33,18 +33,19 @@ public class Delete {
         countries.contains(contact);
         System.out.println(contact);
         System.out.println(countries.contains(contact));
-//        if(contact == ){
-//            countries.remove(contact);
-//        }else{
-//            countries.remove(contact);
-//        }
-//        countries.remove(contact);
+
+        if(countries.contains(contact) == true ){
+            countries.remove(contact);
+        }else{
+            System.out.println("try again");
+        }
+
 
 //       List<String> countries = Arrays.;
 
 //        String title = "These are countries:";
 
-        Files.write(filepath, countries, StandardOpenOption.DELETE_ON_CLOSE);
+        Files.write(filepath, countries, StandardOpenOption.APPEND);
 //        System.out.println(Files.readAllLines(filepath));
 
 //        List<String> fileContents = Files.readAllLines(filepath);
