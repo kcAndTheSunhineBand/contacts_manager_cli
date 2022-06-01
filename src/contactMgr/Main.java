@@ -3,11 +3,7 @@ package contactMgr;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//import mainpackage.Print;
-//import mainpackage.Add;
-//import mainpackage.Search;
-//import mainpackage.Change;
-//import mainpackage.Delete;
+
 
 import java.io.*;
 import java.net.*;

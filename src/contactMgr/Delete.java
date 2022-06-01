@@ -14,15 +14,15 @@ public class Delete {
     public static void deleteFromFile() throws IOException {
         System.out.println("Please enter name to delete: ");
         Scanner din = new Scanner(System.in);
-        Integer fname= din.nextInt();
+        String contact= din.next();
 
 //        String contact = fname + " " + lname + " | " + pnumber;
 
         Path filepath = Paths.get("places", "countries.txt");
 //        System.out.println(filepath);
 
-//        List<String> countries = Arrays.asList(contact);
-        array = ArrayUtils.removeElement(contact, element);
+        List<String> countries = Arrays.asList(contact);
+        countrie.remove(contact);
 
 //       List<String> countries = Arrays.;
 
@@ -34,29 +34,8 @@ public class Delete {
 //        List<String> fileContents = Files.readAllLines(filepath);
 //        System.out.println(fileContents);
 
+
+
     }
 }
 
-//    List<String> values = new ArrayList<String>();
-//values.add("A");
-//        values.add("B");
-//        values.add("C");
-//        values.add("D");
-//        values.add("E");
-//        values.add("D");
-//
-//        BufferedWriter fileWriter = null;
-//        try
-//        {
-//        fileWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("fileName.txt")));
-//
-//        for (String value : values)
-//        {
-//        fileWriter.write(value + System.getProperty("line.separator"));
-//        }
-//        }
-//        finally
-//        {
-//        if (fileWriter != null)
-//        fileWriter.close();
-//        }
