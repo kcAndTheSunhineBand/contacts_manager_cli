@@ -15,6 +15,14 @@ public class Delete {
         System.out.println("Please enter name to delete: ");
         Scanner din = new Scanner(System.in);
         String contact= din.next();
+//        System.out.println("Please enter first name: ");
+//        Scanner in = new Scanner(System.in);
+//        String fname= in.nextLine();
+//
+//        System.out.println("Please enter last name: ");
+//        Scanner in2 = new Scanner(System.in);
+//        String lname= in.nextLine();
+
 
 //        String contact = fname + " " + lname + " | " + pnumber;
 
@@ -22,13 +30,21 @@ public class Delete {
 //        System.out.println(filepath);
 
         List<String> countries = Arrays.asList(contact);
-        countrie.remove(contact);
+        countries.contains(contact);
+        System.out.println(contact);
+        System.out.println(countries.contains(contact));
+//        if(contact == ){
+//            countries.remove(contact);
+//        }else{
+//            countries.remove(contact);
+//        }
+//        countries.remove(contact);
 
 //       List<String> countries = Arrays.;
 
 //        String title = "These are countries:";
 
-        Files.write(filepath, countries, StandardOpenOption.APPEND);
+        Files.write(filepath, countries, StandardOpenOption.DELETE_ON_CLOSE);
 //        System.out.println(Files.readAllLines(filepath));
 
 //        List<String> fileContents = Files.readAllLines(filepath);
