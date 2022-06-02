@@ -8,20 +8,22 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Delete {
+
     public static Path filepath = Paths.get("places", "contacts.txt");
+
     public static void deleteFromFile() throws IOException {
         System.out.println("Please enter name to delete: ");
-        Scanner din = new Scanner(System.in);
-        String contact= din.nextLine();
-        List<String> countries = Files.readAllLines(filepath);
-        for (String country : countries) {
+        Scanner userInput = new Scanner(System.in);
+        String contact= userInput.nextLine();
+
+        List<String> contacts = Files.readAllLines(filepath);
+        for (String country : contacts) {
             if (country.equals(contact)) {
                 System.out.println("You deleted: " + contact);
-                countries.remove(contact);
-                Files.write(filepath, countries);
+                contacts.remove(contact);
+                Files.write(filepath, contacts);
             }
         }
-
     }
 }
 
